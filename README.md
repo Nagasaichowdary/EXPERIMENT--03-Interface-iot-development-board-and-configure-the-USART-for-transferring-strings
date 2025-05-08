@@ -91,11 +91,12 @@ UART transmits and receives data asynchronously, meaning there is no shared cloc
 
 ## STM 32 CUBE PROGRAM :
 
+```
 #include "main.h"
 #include"stdio.h"
 #if defined (_ICCARM) || defined (_ARMCC_VERSION)
 #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
-#elif defined(_GNUC_)
+#elif defined(GNUC)
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #endif
 
@@ -116,8 +117,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-     printf("NIKSHITHA G\n");
-     printf("212223110031\n");
+     printf("saveetha enineering college\n");
+     printf("scoft\n");
      HAL_Delay(500);
   }
 }
@@ -125,10 +126,13 @@ PUTCHAR_PROTOTYPE{
 	HAL_UART_Transmit(&huart2, (uint8_t*)&ch,1,0xFFFF);
 	return ch;
 }
+```
 
 ## Output screen shots of Serial port utility   :
  
- ![image](https://github.com/user-attachments/assets/8455b3e8-b4d4-4a24-88a2-784548464a5a)
+
+![Screenshot 2025-05-08 101502](https://github.com/user-attachments/assets/071df731-2c76-43eb-844d-fba7d61e7a29)
+
 
  
  
